@@ -61,6 +61,9 @@ class _MyHomePageState extends State<MyHomePage> {
         builder: (context, snapshot){
           if(snapshot.hasError){
             debugPrint('Error Occured');
+            return Center(
+              'Please check your internet connection!'
+            )
           }
           if(snapshot.hasData){
             return Container(
